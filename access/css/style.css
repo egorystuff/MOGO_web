@@ -45,6 +45,8 @@ h6 {
   width: 100%;
   max-width: 880px;
   margin: auto;
+
+  text-align: center;
 }
 
 .intro_title {
@@ -52,15 +54,24 @@ h6 {
   font-size: 150px;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
   line-height: 1;
 }
 
+.intro_title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 60px auto 0;
+
+  background-color: #fff;
+}
+
 .intro_suptitle {
+  margin-bottom: 20px;
   font-family: 'Kaushan Script', cursive;
   font-size: 72px;
   color: #fff;
-  text-align: center;
 }
 
 /* header */
@@ -127,4 +138,27 @@ h6 {
 
 .nav_link:hover::after {
   opacity: 1;
+}
+
+/* button */
+.btn {
+  margin-top: 60px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+
+  border: 3px solid #fff;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
 }
