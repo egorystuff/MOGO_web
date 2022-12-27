@@ -254,3 +254,26 @@ h6 {
   font-size: 15px;
   color: #999;
 }
+
+/* about */
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_item {
+  width: 380px;
+}
+
+.about_item:hover.about_img img {
+  opacity: 0.3;
+}
+
+.about_img {
+  background: linear-gradient(bottom, #f38181, #fce38a);
+}
+
+.about_img img {
+  display: block;
+  transition: opacity 0.2s linear;
+}
