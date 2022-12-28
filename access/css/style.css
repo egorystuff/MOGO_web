@@ -257,6 +257,7 @@ h6 {
 
 /* about */
 .about {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -307,4 +308,25 @@ h6 {
   transform: translate3d(0, -50%, 0);
 
   transition: opacity 0.2s linear;
+}
+
+/* statistics */
+.statistics {
+  background-color: #95e1d3;
+}
+
+.stat {
+  display: flex;
+}
+
+.stat_item {
+  flex: 1 1 0;
+  text-align: center;
+  color: #fff;
+
+  border-left: 1px solid #b5eae0;
+}
+
+.stat_item:last-child {
+  border-right: 1px solid #b5eae0;
 }
