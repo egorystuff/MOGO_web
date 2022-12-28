@@ -321,6 +321,7 @@ h6 {
 
 .stat_item {
   flex: 1 1 0;
+  padding: 70px 25px;
   text-align: center;
   color: #fff;
 
@@ -329,4 +330,16 @@ h6 {
 
 .stat_item:last-child {
   border-right: 1px solid #b5eae0;
+}
+
+.stat_count {
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.stat_text {
+  font-size: 14px;
+  text-transform: uppercase;
 }
