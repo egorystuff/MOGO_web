@@ -22,6 +22,16 @@ h6 {
   margin: 0;
 }
 
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  margin: 40px 0;
+
+  background-color: #e5e5e5;
+}
+
 /* container */
 .container {
   width: 100%;
@@ -218,11 +228,17 @@ h6 {
   padding: 80px 80px;
 }
 
+.section--devices {
+  padding-bottom: 0;
+  background: url(../images/devices_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .section_header {
   margin-bottom: 40px;
   width: 100%;
   max-width: 950px;
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
 
   text-align: center;
 }
@@ -352,14 +368,15 @@ h6 {
 
 .services_item {
   flex: 1 1 0;
-  padding-left: 90px;
+  padding-left: 85px;
+  padding-right: 35px;
   position: relative;
 }
 
 .services_icon {
   position: absolute;
   top: 0;
-  left: 30px;
+  left: 28px;
   z-index: 1;
 }
 
@@ -373,4 +390,16 @@ h6 {
 .services_text {
   font-size: 15px;
   color: #999;
+}
+
+/* new block */
+/* devices */
+.devices {
+  width: 100%;
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+.devices_item {
+  display: block;
 }
