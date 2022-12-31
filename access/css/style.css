@@ -229,6 +229,7 @@ hr {
 }
 
 .section--devices {
+  margin-bottom: 40px;
   padding-bottom: 0;
   background: url(../images/devices_bg.jpg) center no-repeat;
   background-size: cover;
@@ -410,4 +411,31 @@ hr {
   bottom: -80px;
   right: 0;
   z-index: 1;
+}
+
+/* new block */
+/* wedo */
+.wedo {
+  display: flex;
+}
+
+.wedo_item {
+  width: 50%;
+}
+
+/* accordion */
+.accordion_item {
+  border: 1px solid #e5e5e5;
+}
+
+.accordion_header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion_content {
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
 }
