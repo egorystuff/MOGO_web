@@ -396,10 +396,18 @@ hr {
 /* devices */
 .devices {
   width: 100%;
-  max-width: 60px;
+  max-width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 
 .devices_item {
   display: block;
+}
+
+.devices_item--iphone {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
 }
