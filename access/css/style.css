@@ -352,5 +352,25 @@ h6 {
 
 .services_item {
   flex: 1 1 0;
-  text-align: center;
+  padding-left: 90px;
+  position: relative;
+}
+
+.services_icon {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 1;
+}
+
+.services_title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.services_text {
+  font-size: 15px;
+  color: #999;
 }
