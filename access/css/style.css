@@ -499,6 +499,7 @@ hr {
 /* reviews */
 .reviews {
   padding: 0 110px;
+  position: relative;
 }
 
 .reviews_item {
@@ -537,4 +538,37 @@ hr {
   margin-right: 20px;
 
   background-color: #f38181;
+}
+
+.reviews_buttom {
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.reviews_buttom::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+}
+
+.reviews_buttom--prev {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.reviews_buttom--next {
+  right: 0;
+  transform: rotate(135deg);
 }
