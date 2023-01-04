@@ -239,6 +239,10 @@ hr {
   background-color: #f8f8f8;
 }
 
+.section--clients {
+  background-color: #f5f5f5;
+}
+
 .section_header {
   margin-bottom: 40px;
   width: 100%;
@@ -524,12 +528,14 @@ hr {
 }
 
 .reviews_item {
-  padding-left: 220px;
+  padding-left: 255px;
   position: relative;
 }
 
 .reviews_photo {
   border: 3px solid #95e1d3;
+  border-radius: 50%;
+
   position: absolute;
   top: 0;
   left: 0;
