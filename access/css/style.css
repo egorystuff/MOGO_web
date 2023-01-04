@@ -240,7 +240,9 @@ hr {
 }
 
 .section--clients {
-  background-color: #f5f5f5;
+  background: #f5f5f5 url('../images/clients/back.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .section_header {
