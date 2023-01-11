@@ -451,6 +451,8 @@ hr {
 
 .devices_item {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .devices_item--iphone {
@@ -464,10 +466,19 @@ hr {
 /* wedo */
 .wedo {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
 .wedo_item {
   width: 50%;
+  padding: 0 15px;
+}
+
+.wedo_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* accordion */
@@ -1130,7 +1141,7 @@ hr {
     border-right: 0;
   }
 
-  /* sevices */
+  /* services */
   .services_item {
     width: 50%;
     padding-bottom: 0;
@@ -1150,6 +1161,10 @@ hr {
   /* section */
   .section {
     padding: 40px 0;
+  }
+
+  .section--devices {
+    padding-bottom: 0;
   }
 
   /* slider */
@@ -1177,8 +1192,28 @@ hr {
     margin-bottom: 0;
   }
 
-  /* sevices */
+  /* services */
+  .services {
+    justify-content: center;
+  }
+
   .services_item {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 55px;
+    padding-right: 0;
+  }
+
+  .services_icon {
+    left: 0;
+  }
+
+  /* wedo */
+  .wedo_img {
+    display: none;
+  }
+
+  .wedo_item {
     width: 100%;
   }
 }
@@ -1218,5 +1253,16 @@ hr {
 
   .stat_count {
     font-size: 52px;
+  }
+
+  /* devices */
+  .devices {
+    max-width: 320px;
+  }
+
+  .devices_item--iphone {
+    width: 180px;
+    bottom: -50px;
+    right: -80px;
   }
 } ;
