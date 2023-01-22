@@ -935,7 +935,7 @@ hr {
   font-size: 30px;
   line-height: 1;
   font-weight: bold;
-  font-display: normal;
+  font-display: auto;
 }
 
 .blog_content {
@@ -1566,4 +1566,4 @@ hr {
   .subscribe_button {
     width: 100%;
   }
-} ;
+}
