@@ -43,6 +43,26 @@ $(function () {
   $('#nav-toggle').on('click', function (event) {
     event.preventDefault();
 
+    $(this).toggleClass('active');
     $('#nav').toggleClass('active');
+  });
+
+  // collapse
+  $('[data-collapse]').on('click', function (event) {
+    event.preventDefault();
+
+    var $this = $(this);
+    var blockId = $this.data('collapse');
+
+    $this.toggleClass('active');
+    // $(blockId).slideToggle();
+  });
+
+  // slider
+  $('[data-slider]').slick({
+    infinite: true,
+    fade: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 });
