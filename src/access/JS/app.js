@@ -24,8 +24,12 @@ $(function () {
   $('[data-scroll]').on('click', function (event) {
     event.preventDefault();
 
-    var blockId = $(this).data('scroll');
+    var $this = $(this);
+    var blockId = $this.data('scroll');
     var blockOffset = $(blockId).offset().top;
+
+    $('#nav a').removeClass('active');
+    $this.addClass('active');
 
     $('html,body').animate(
       {
@@ -33,5 +37,12 @@ $(function () {
       },
       500
     );
+  });
+
+  // menu nav toggle
+  $('#nav-toggle').on('click', function (event) {
+    event.preventDefault();
+
+    $('#nav').toggleClass('active');
   });
 });
