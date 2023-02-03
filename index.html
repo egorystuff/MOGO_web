@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <script
       src="https://kit.fontawesome.com/f3019626da.js"
       crossorigin="anonymous"
@@ -19,17 +24,17 @@
   </head>
   <body>
     <!-- new block -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header_inner">
-          <div class="header_logo">Mogo</div>
+          <div class="header_logo" href="a" data-scroll="#intro">Mogo</div>
 
-          <nav class="nav">
-            <a class="nav_link" href="a">About</a>
-            <a class="nav_link" href="a">Service</a>
-            <a class="nav_link" href="a">Work</a>
-            <a class="nav_link" href="a">Blog</a>
-            <a class="nav_link" href="a">Contact</a>
+          <nav class="nav" id="nav">
+            <a class="nav_link" href="a" data-scroll="#about">About</a>
+            <a class="nav_link" href="a" data-scroll="#service">Service</a>
+            <a class="nav_link" href="a" data-scroll="#work">Work</a>
+            <a class="nav_link" href="a" data-scroll="#blog">Blog</a>
+            <a class="nav_link" href="a" data-scroll="#footer">Contact</a>
             <a class="nav_link" href="#"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
@@ -38,7 +43,7 @@
             </a>
           </nav>
 
-          <botton class="nav-toggle active" type="button">
+          <botton class="nav-toggle" id="nav-toggle" type="button">
             <span class="nav-toggle_item">Menu</span>
           </botton>
         </div>
@@ -46,7 +51,7 @@
     </header>
 
     <div class="page">
-      <div class="intro">
+      <div class="intro" id="intro">
         <div class="container">
           <div class="intro_inner">
             <h2 class="intro_suptitle">Creative Template</h2>
@@ -80,8 +85,8 @@
         </div>
       </div>
 
-      <!-- new block -->
-      <section class="section">
+      <!-- new block about -->
+      <section class="section" id="about">
         <div class="container">
           <div class="section_header">
             <h3 class="section_suptitle">What we do</h3>
@@ -127,7 +132,7 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block statistics-->
       <div class="statistics">
         <div class="container">
           <div class="stat">
@@ -159,8 +164,8 @@
         </div>
       </div>
 
-      <!-- new block -->
-      <section class="section">
+      <!-- new block service-->
+      <section class="section" id="service">
         <div class="container">
           <div class="section_header">
             <h3 class="section_suptitle">We work with</h3>
@@ -248,7 +253,7 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block devices-->
 
       <section class="section section--devices">
         <div class="container">
@@ -267,7 +272,7 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block wedo-->
       <section class="section">
         <div class="container">
           <div class="section_header">
@@ -290,7 +295,7 @@
 
             <div class="wedo_item">
               <div class="accordion">
-                <div class="accordion_item">
+                <div class="accordion_item" data-collapse="#wedo_1">
                   <div class="accordion_header">
                     <img
                       class="accordion_icon"
@@ -299,7 +304,7 @@
                     />
                     <div class="accordion_title">Photography</div>
                   </div>
-                  <div class="accordion_content">
+                  <div class="accordion_content" id="wedo_1">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -313,7 +318,7 @@
                   </div>
                 </div>
 
-                <div class="accordion_item active">
+                <div class="accordion_item" data-collapse="#wedo_2">
                   <div class="accordion_header">
                     <img
                       class="accordion_icon"
@@ -322,7 +327,7 @@
                     />
                     <div class="accordion_title">creativity</div>
                   </div>
-                  <div class="accordion_content">
+                  <div class="accordion_content" id="wedo_2">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -336,7 +341,7 @@
                   </div>
                 </div>
 
-                <div class="accordion_item">
+                <div class="accordion_item" data-collapse="#wedo_3">
                   <div class="accordion_header">
                     <img
                       class="accordion_icon"
@@ -345,7 +350,7 @@
                     />
                     <div class="accordion_title">web design</div>
                   </div>
-                  <div class="accordion_content">
+                  <div class="accordion_content" id="wedo_3">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -364,32 +369,51 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block reviews 1-->
       <div class="section section--gray">
         <div class="container">
           <div class="reviews">
             <!-- buttoms -->
-            <a class="reviews_buttom reviews_buttom--prev" href="">Prev</a>
-            <a class="reviews_buttom reviews_buttom--next" href="">Next</a>
+            <!-- <a class="reviews_buttom reviews_buttom--prev" href="">Prev</a> -->
+            <!-- <a class="reviews_buttom reviews_buttom--next" href="">Next</a> -->
 
-            <div class="reviews_item">
-              <img
-                class="reviews_photo"
-                src="http://via.placeholder.com/145"
-                alt=""
-              />
-              <div class="reviews_text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.”
+            <div data-slider>
+              <div>
+                <div class="reviews_item">
+                  <img
+                    class="reviews_photo"
+                    src="http://via.placeholder.com/145"
+                    alt=""
+                  />
+                  <div class="reviews_text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  </div>
+                  <div class="reviews_autor">Autor Name</div>
+                </div>
               </div>
-              <div class="reviews_autor">Autor Name</div>
+
+              <div>
+                <div class="reviews_item">
+                  <img
+                    class="reviews_photo"
+                    src="http://via.placeholder.com/145"
+                    alt=""
+                  />
+                  <div class="reviews_text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elitiqua.
+                  </div>
+                  <div class="reviews_autor">Autor MAX</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- new block -->
+      <!-- new block team-->
       <section class="section">
         <div class="container">
           <div class="section_header">
@@ -493,7 +517,7 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block logos-->
       <div class="section section--gray">
         <div class="container">
           <div class="logos">
@@ -519,8 +543,8 @@
         </div>
       </div>
 
-      <!-- new block -->
-      <section class="section">
+      <!-- new block works-->
+      <section class="section" id="work">
         <div class="container">
           <div class="section_header">
             <h3 class="section_suptitle">What we do</h3>
@@ -603,32 +627,47 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block reviews 2-->
       <div class="section">
         <div class="container">
           <div class="reviews">
-            <!-- buttoms -->
-            <a class="reviews_buttom reviews_buttom--prev" href="">Prev</a>
-            <a class="reviews_buttom reviews_buttom--next" href="">Next</a>
-
-            <div class="reviews_item">
-              <img
-                class="reviews_photo"
-                src="access/images/reviews.png"
-                alt=""
-              />
-              <div class="reviews_text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.”
+            <div data-slider>
+              <div>
+                <div class="reviews_item">
+                  <img
+                    class="reviews_photo"
+                    src="access/images/reviews.png"
+                    alt=""
+                  />
+                  <div class="reviews_text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  </div>
+                  <div class="reviews_autor">Autor Name</div>
+                </div>
               </div>
-              <div class="reviews_autor">Autor Name</div>
+              <div>
+                <div class="reviews_item">
+                  <img
+                    class="reviews_photo"
+                    src="access/images/reviews.png"
+                    alt=""
+                  />
+                  <div class="reviews_text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  </div>
+                  <div class="reviews_autor">Autor Name</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- new block -->
+      <!-- new block clients-->
       <section class="section section--clients">
         <div class="container">
           <div class="section_header">
@@ -705,8 +744,8 @@
         </div>
       </section>
 
-      <!-- new block -->
-      <section class="section">
+      <!-- new block blog-->
+      <section class="section" id="blog">
         <div class="container">
           <div class="section_header">
             <h3 class="section_suptitle">Our stories</h3>
@@ -825,7 +864,7 @@
         </div>
       </section>
 
-      <!-- new block -->
+      <!-- new block map-->
       <section class="section section--map">
         <div class="container">
           <div class="map">
@@ -841,8 +880,8 @@
         </div>
       </section>
 
-      <!-- new block -->
-      <footer class="footer">
+      <!-- new block footer-->
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer_inner">
             <div class="footer_col footer_col--1">
@@ -1000,5 +1039,12 @@
         <!-- container -->
       </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="access/JS/app.js"></script>
   </body>
 </html>
